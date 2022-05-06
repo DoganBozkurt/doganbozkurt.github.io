@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    
+    height: 42em;
+    background: linear-gradient(130deg,rgb(179, 16, 16),rgb(167, 167, 19),rgb(68, 68, 204));
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 200% 200%;
+
+    animation: arkaplanAnimasyon 5s linear infinite;
+}
+@keyframes arkaplanAnimasyon{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+.profil-card{
+    height: 42em;
+    width: 50em;
+    text-align: center;
+    border-radius: 2rem;
+}
+.card-header{
+    background: #1a2a3a;
+    padding: 1rem 1rem;
+}
+.picture img{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.picture{
+    display: inline-block;
+    padding: 0.4rem;
+    background: linear-gradient(130deg,#74b9ff,#e28341);
+    margin: auto;
+    border-radius: 50%;
+    animation: animasyon 2s linear infinite;
+    background-size: 200% 200%;
+}
+@keyframes animasyon{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+.name{
+    color: #f2f2f2;
+    font-size: 2rem;
+    font-weight: 5rem;
+    margin: 0.3rem 0;
+}
+.desc{
+    color: #e66767;
+    font-size: 1rem;
+    font-style: italic;
+}
+.kodlama-class{
+    margin: 0.7rem;
+    padding: 1rem;
+}
+.kodlama-btn{
+    display: flex;
+    margin: 0.5rem;
+    height: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 0.8rem;
+    
+}
+.kodlama-btn .yazi{
+    display: flex;
+    color: #f4f4f4;
+    width: 20%;
+    height: 100%;
+    text-align: left;
+    align-items: center;
+    border-radius: 0.8rem;
+    padding: 1rem;
+
+
+} 
+.kodlama-btn .cSharp{
+    background-color: #74b9ff;
+    animation: animasyonCSharp 5s linear infinite;
+}
+.kodlama-btn .flutter{
+    background-color: red;
+    animation: animasyonFlutter 5s linear infinite;
+}
+.kodlama-btn .html5{
+    background-color: blue;
+    animation: animasyonHtml5 5s linear infinite;
+}
+.kodlama-btn .css3{
+    background-color: yellowgreen;
+    animation: animasyonCss3 5s linear infinite;
+}
+@keyframes animasyonCSharp{
+    100%{
+        width: 60%;
+    }
+}
+@keyframes animasyonFlutter{
+    100%{
+        width: 70%;
+    }
+}
+@keyframes animasyonHtml5{
+    100%{
+        width: 65%;
+    }
+}
+@keyframes animasyonCss3{
+    100%{
+        width: 60%;
+    }
+}
+.kodlama-btn span{
+    color: #2c3a47;
+    font-size: 0.6rem;
+    padding: 1rem;
+}
+.sm{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+.sm a{
+    color: #f2f2f2;
+    width: 4rem;
+    font-size: 3rem;
+    transition: .3s linear;
+}
+.sm a:hover{
+    color: #e28341;
+}
+
+.card-footer{
+    background-color: #f4f4f4;
+    padding: 1rem;
+}
+.numbers{
+    display: flex;
+    align-items: center;
+}
+.item{
+    flex: 1;
+    font-size: 1rem;
+}
+.item span{
+    display: block ;
+    color: #2c3a47;
+    font-size: 24px;
+}
